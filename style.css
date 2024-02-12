@@ -1,27 +1,31 @@
 body {
    font-family: Arial, sans-serif;
-   margin:   0;
-   padding:   0;
+   margin: 0;
+   padding: 0;
    background-color: #f0f0f0;
    color: black;
 }
 
+h1 {
+   text-align: center;
+}
+
 header {
-   background-color: #090c9b; /* Duke Blue */
+   background-color: #090c9b;
    color: white;
-   padding:   20px   0;
+   padding: 20px 0;
    text-align: center;
 }
 
 header nav ul {
    list-style: none;
-   padding:   0;
+   padding: 0;
    display: flex;
    justify-content: center;
 }
 
 header nav ul li {
-   margin:   0   10px;
+   margin: 0 10px;
 }
 
 header nav ul li a {
@@ -31,27 +35,38 @@ header nav ul li a {
 
 main {
    text-align: justify;
+   text-align: center;
    padding:   20px;
 }
 
 #intro {
-   background-color: #fff; /* White background for the section */
-   padding:   20px;
-   margin-top:   20px;
-   box-shadow:   0   2px   5px rgba(0,   0,   0,   0.1);
+   background-color: #fff;
+   padding: 20px;
+   margin-top: 20px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #intro h2 {
-   margin-bottom:   20px;
+   margin-bottom: 20px;
 }
 
 footer {
-   background-color: #090c9b; /* Duke Blue */
+   background-color: #090c9b;
    color: white;
    text-align: center;
-   padding:   10px   0;
+   padding:   10px 0;
    position: fixed;
-   left:   0;
-   bottom:   0;
-   width:   100%;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+   header nav ul {
+      flex-direction: column;
+   }
+
+   header nav ul li {
+      margin: 10px 0;
+   }
 }
